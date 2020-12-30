@@ -179,7 +179,7 @@ input[type = submit]:active {
 /* HEADER*/
 /*--------------------------------------------------*/
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -344,7 +344,7 @@ section {
 /* ***** Testinomial*********/
 /*--------------------------------------------------*/
 .section-testinomials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8)), url(resources/img/back-customers.jpg);
     background-size: cover;
     color:#fff;
     background-attachment: fixed;
