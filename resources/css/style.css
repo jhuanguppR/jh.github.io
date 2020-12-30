@@ -345,7 +345,7 @@ section {
 /*--------------------------------------------------*/
 .section-testinomials {
     background-image: url(img/back-customers.jpg);
-   /* background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8));*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8));
     background-size: cover;
     color:#fff;
     background-attachment: fixed;
