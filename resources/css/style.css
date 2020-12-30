@@ -344,7 +344,7 @@ section {
 /* ***** Testinomial*********/
 /*--------------------------------------------------*/
 .section-testinomials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8)), url(https://jhuanguppr.github.io/jh.github.io/img/back-customers.jpg);
     background-size: cover;
     color:#fff;
     background-attachment: fixed;
