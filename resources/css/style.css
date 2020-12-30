@@ -180,7 +180,7 @@ input[type = submit]:active {
 /*--------------------------------------------------*/
 header {
     background-image: url(img/hero.jpg);
-    background-size: cover;
+    background-size:auto;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
@@ -345,7 +345,7 @@ section {
 /*--------------------------------------------------*/
 .section-testinomials {
     background-image: url(img/back-customers.jpg);
-    background-size: cover;
+    background-size:contain;
     color:#fff;
     background-attachment: fixed;
 }
