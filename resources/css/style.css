@@ -44,7 +44,7 @@ h1, h2, h3 {
 
 h1 {
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #fff;
     font-size:200%;
     word-spacing:4px;
@@ -149,6 +149,7 @@ input[type = submit]  {
     border: 1px solid #e67e22;
     color: #fff; 
     margin-right: 20px;
+    padding: 10px 45px;
 }
 
 .btn-ghost:link,
@@ -179,8 +180,8 @@ input[type = submit]:active {
 /* HEADER*/
 /*--------------------------------------------------*/
 header {
-    background-image: url(img/hero.jpg);
-    background-size:auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size:cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
@@ -344,8 +345,8 @@ section {
 /* ***** Testinomial*********/
 /*--------------------------------------------------*/
 .section-testinomials {
-    background-image: url(img/back-customers.jpg);
-    background-size:contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size:cover;
     color:#fff;
     background-attachment: fixed;
 }
