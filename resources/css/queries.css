@@ -62,8 +62,7 @@
 
 /*small phones to small tablets: 481px to 767px */
 @media only screen and (max-width: 767px) {
-
-
+    header {background-attachment: 100%; }
     body {font-size: 16px;}
     section {padding: 30px 0;}
 
@@ -121,6 +120,7 @@
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0;}
     .contacct-form {width: 100%;}
+    header {background-attachment: 100%; }
 
 }
 
