@@ -115,6 +115,11 @@
         margin: 0 0 4% 0;
     }
 
+    blockquote { 
+        font-weight: 400;
+        font-size: 120%;
+    }
+
 }
 
 /* small phone: from 480px */
@@ -123,6 +128,10 @@
     .contacct-form {width: 100%;}
     header {background-attachment:scroll; }
     .section-testinomials {background-attachment: scroll;}
+    blockquote { 
+        font-weight: 400;
+        font-size: 110%;
+    }
 
 }
 
