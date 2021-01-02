@@ -67,25 +67,25 @@ $(document).ready(function() {
     $('.js--wp-1').waypoint(function() {
         $('.js--wp-1').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '25%'
+        offset: '40%'
     });
 
     $('.js--wp-2').waypoint(function() {
         $('.js--wp-2').addClass('animate__animated animate__fadeInUp');
     }, {
-        offset: '25%'
+        offset: '40%'
     });
 
     $('.js--wp-3').waypoint(function() {
         $('.js--wp-3').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '25%'
+        offset: '40%'
     });
 
     $('.js--wp-4').waypoint(function() {
         $('.js--wp-4').addClass('animate__animated animate__rotateIn');
     }, {
-        offset: '25%'
+        offset: '40%'
     });
 
 
