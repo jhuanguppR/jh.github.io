@@ -321,12 +321,18 @@
             <form method = "post" action = "mailer.php" class = "contact-form">
 
                 <div class = "row">
-                    <div class = "form-messages success">
-                        Thank you! Your form has been sent. 
-                    </div>
-                    <div class = "form-messages error">
-                        Oops! Something went wrong. Please try again.  
-                    </div>
+
+                    <?php 
+                    if ($_GET['success'] == 1 {
+                        echo "<div class = \"form-messages success\">
+                        Thank you! Your form has been sent. </div>" ;
+                    }
+                    if ($_GET['success'] == -1 {
+                    echo "<div class = \"form-messages error\">
+                        Oops! Something went wrong. Please try again. </div>";
+                    }
+
+                    ?>
                 </div> 
                 <div class = "row">
                     

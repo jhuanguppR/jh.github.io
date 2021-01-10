@@ -618,3 +618,22 @@ footer p {
 .js--wp-3.animate__animated {
     opacity: 1;
 }
+
+.form-messages {
+    width : 75%;
+    margin: 0 auto;
+    padding : 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    font-size: 120%;
+    color: #333;
+    
+}
+
+.success {
+    background-color: rgba(0, 255, 255, 0.6);
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.6);
+}
