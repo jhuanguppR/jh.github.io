@@ -320,19 +320,8 @@
         <div class = "row">
             <form method = "post" action = "mailer.php" class = "contact-form">
 
-                <div class = "row">
-
-                    <?php 
-                    if ($_GET['success'] == 1 {
-                        echo "<div class = \"form-messages success\">
-                        Thank you! Your form has been sent. </div>" ;
-                    }
-                    if ($_GET['success'] == -1 {
-                    echo "<div class = \"form-messages error\">
-                        Oops! Something went wrong. Please try again. </div>";
-                    }
-
-                    ?>
+                
+                    
                 </div> 
                 <div class = "row">
                     
@@ -390,9 +379,31 @@
                         <label>&nbsp;</label>
                     </div>
                     <div class = "col span-2-of-3">
-                        <input type = "submit" value = "Send it">
+                        <input type = "submit" name = "submit" value = "Send it">
                     </div>
                 </div>
+
+                <div class = "row">
+
+                    <?php
+                        if (!isset($_GET['status'])) {
+                            exit();
+                        }
+
+                        else {
+                            $errorCheck = $_GET['status'];
+
+                            if ($errorCheck == "-1") {
+                            echo "<div class = \"form-messages success\"> Something is wrong  </div>" ;    
+                            exit();
+                            }
+
+                            elseif ($erroCheck == "1" ) {
+                                echo "<div class = \"form-messages error\"> Thank you! Your form has been sent.</div>" ;
+                            }
+                        }
+
+                    ?> 
 
             </form>
         </div>

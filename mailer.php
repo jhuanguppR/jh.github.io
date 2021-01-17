@@ -8,9 +8,11 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.jhwebdesigns/index.php?success=-1#form");
-        exit;
+        header("Location: http://www.jhwebdesigns.com/index.php?status=-1#form");
+        exit();
     }
+    
+    
 
     // Set the recipient email address. Update this to YOUR desired email address.
     $recipient = "jh@jhwebdesigns.com";
@@ -30,6 +32,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: http://www.jhwebdesigns.com/index.php?success=1#form");
+    header("Location: http://www.jhwebdesigns.com/index.php?status=1#form");
 
 ?>
