@@ -317,19 +317,43 @@
         <div class = "row">
              <h2> We are happy to hear from you</h2>
         </div>
+
         <div class = "row">
             <form method = "post" action = "mailer.php" class = "contact-form">
+                <div class = "row">
+                    <div class = "col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class = "col span-2-of-3">
+                        <?php
+                            if (!isset($_GET['status'])) {
+                                exit();
+                            }
 
-                
-                    
+                            else {
+                                $errorCheck = $_GET['status'];
+
+                                if ($errorCheck == -1) {
+                                    echo "<div class = \"error\"> Something is wrong  </div>" ;    
+                                    exit();
+                                    }
+
+                                elseif ($errorCheck == 1) {
+                                    echo "<div class = \"success\"> Thank you! Your form has been sent.</p>" ;
+                                }
+                            }
+
+                        ?> 
+                    </div>                   
                 </div> 
+                
                 <div class = "row">
                     
                     <div class = "col span-1-of-3">
                         <label for = "name" >Name</label>
                     </div>
                     <div class = "col span-2-of-3">
-                        <input type = "text" name = "Name" id = "name" placeholder = "Your Name" required>
+                        <input type = "text" name = "name" id = "name" placeholder = "Your Name" required>
                     </div>
                 </div>
 
@@ -383,28 +407,7 @@
                     </div>
                 </div>
 
-                <div class = "row">
-
-                    <?php
-                        if (!isset($_GET['status'])) {
-                            exit();
-                        }
-
-                        else {
-                            $errorCheck = $_GET['status'];
-
-                            if ($errorCheck == "-1") {
-                            echo "<div class = \"form-messages success\"> Something is wrong  </div>" ;    
-                            exit();
-                            }
-
-                            elseif ($erroCheck == "1" ) {
-                                echo "<div class = \"form-messages error\"> Thank you! Your form has been sent.</div>" ;
-                            }
-                        }
-
-                    ?> 
-
+                
             </form>
         </div>
 
